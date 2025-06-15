@@ -1,0 +1,3 @@
+[submodule "my-lms-frontend"]
+	path = my-lms-frontend
+	url = https://github.com/mandaniarchi41/lms-app.git
