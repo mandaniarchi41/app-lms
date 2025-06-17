@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+/* Base styles */
+:root {
+  --primary-background: #FFFFFF;
+  --primary-text: #2E3A87; /* Dark blue for text on white background */
+  --secondary-background: #EEF2FF; /* A light blue for secondary areas like cards */
+  --secondary-text: #2E3A87;
+  --border-light: #D1D5DB;
+}
+
+body {
+  background-color: var(--primary-background);
+  color: var(--primary-text);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-text);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-text); /* Dark blue background */
+  color: var(--primary-background); /* White text */
+  border: 1px solid var(--primary-text);
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #1F2937; /* Slightly darker blue on hover */
+  border-color: #1F2937;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-text); /* Dark blue text */
+  border: 1px solid var(--primary-text);
+  padding: 0.75rem 2rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-text); /* Dark blue background */
+  color: var(--primary-background); /* White text */
+}
+
+/* Cards */
+.card {
+  background-color: var(--secondary-background);
+  border: 1px solid var(--border-light);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  border-color: var(--primary-text);
+  transform: translateY(-2px);
+}
+
+/* Form elements */
+input, textarea, select {
+  background-color: var(--primary-background);
+  border: 1px solid var(--border-light);
+  color: var(--primary-text);
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--primary-text);
+  outline: none;
+}
+
+/* Links */
+a {
+  color: var(--primary-text);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #5C6BC0; /* A slightly lighter blue on hover */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-text);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Utility classes */
+.text-primary {
+  color: var(--primary-text);
+}
+
+.text-secondary {
+  color: var(--secondary-text);
+}
+
+.bg-primary-background {
+  background-color: var(--primary-background);
+}
+
+.bg-secondary-background {
+  background-color: var(--secondary-background);
+} 

@@ -40,5 +40,5 @@
     }
   ],
   "buildCommand": "cd my-lms-frontend (2)/my-lms-frontend && npm run build",
-  "outputDirectory": "my-lms-frontend (2)/my-lms-frontend/build"
+  "outputDirectory": "build"
 } 
