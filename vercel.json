@@ -40,6 +40,5 @@
     }
   ],
   "buildCommand": "npm run build",
-  "outputDirectory": "build",
-  "rootDirectory": "my-lms-frontend (2)/my-lms-frontend/my-lms-frontend"
+  "outputDirectory": "build"
 } 
