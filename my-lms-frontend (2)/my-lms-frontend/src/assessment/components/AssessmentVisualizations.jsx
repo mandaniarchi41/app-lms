@@ -11,6 +11,9 @@ import {
   Title,
   Tooltip,
   Legend,
+  LineController,
+  BarController,
+  PieController,
 } from 'chart.js';
 import { ASSESSMENT_TYPES, SCORE_RANGES } from '../utils/types';
 
@@ -24,7 +27,10 @@ ChartJS.register(
   ArcElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  LineController,
+  BarController,
+  PieController
 );
 
 const AssessmentVisualizations = ({ history, assessments }) => {

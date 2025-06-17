@@ -3,10 +3,7 @@
   "builds": [
     {
       "src": "my-lms-frontend (2)/my-lms-frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
+      "use": "@vercel/static-build"
     }
   ],
   "routes": [
@@ -40,5 +37,5 @@
     }
   ],
   "buildCommand": "cd my-lms-frontend (2)/my-lms-frontend && npm run build",
-  "outputDirectory": "build"
+  "outputDirectory": "my-lms-frontend (2)/my-lms-frontend/build"
 } 
