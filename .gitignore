@@ -1,5 +1,6 @@
 # dependencies
 /node_modules
+/my-lms-frontend (2)/my-lms-frontend/node_modules
 /.pnp
 .pnp.js
 
